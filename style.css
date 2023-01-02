@@ -1,0 +1,30 @@
+* {
+  font-family: Futura;
+}
+html, body {
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+#container {
+  border: 2px solid black;
+  border-radius: 15px;
+  max-width: 500px;
+  padding: 30px;
+}
+p, .button, label {
+  font-size: 24px;
+}
+h1 {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+input, label {
+  cursor: pointer;
+}
+.button {
+  background-color: #dddddd;
+  margin-top: 30px;
+  padding: 10px;
+}
