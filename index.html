@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <!-- An example, placeholder survey question and UI -->
+    <div id="container">
+      <h1>Page 1 / 10</h1>
+      <p>The boy could not solve the problem so he asked for help.</p>
+      <h1>Question</h1>
+      <p>Did the boy ask for help?</p>
+      <input type="radio" name="radioOption" id="yes" value="Yes" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" name="radioOption" id="no" value="No" />
+      <label for="no">No</label><br />
+      <input
+        type="button"
+        id="submitAnswer"
+        class="button"
+        value="Submit answer"
+      />
+    </div>
+
+    <!-- Firebase configuration -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script>
+      // TODO: Uncomment and add your configuration info
+      var firebaseConfig = {
+        apiKey: "AIzaSyDO3EbtuJJTaLyyhlrjQyq-55OlD6RC2cE",
+        authDomain: "test-9fac1.firebaseapp.com",
+        databaseURL: "https://test-9fac1-default-rtdb.firebaseio.com",
+        projectId: "test-9fac1",
+        storageBucket: "test-9fac1.appspot.com",
+        messagingSenderId: "1061624600072",
+        appId: "1:1061624600072:web:a02f23cfa8f670e21423bd",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Your typo injection functions -->
+    <script src="typos.js"></script>
+
+    <!-- Your survey sentences and questions -->
+    <script src="tasks.js"></script>
+
+    <!-- Your survey user interface and application -->
+    <script src="Typoglycemia.js"></script>
+  </body>
+</html>
